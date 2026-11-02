@@ -1,0 +1,18 @@
+<label>Nama Depan:</label><br>
+<input type="text" id="namaDepan" placeholder="Masukkan nama depan"><br><br>
+
+<label>Nama Belakang:</label><br>
+<input type="text" id="namaBelakang" placeholder="Masukkan nama belakang"><br><br>
+
+<button onclick="tampilkanNama()">Submit</button>
+
+<script>
+function tampilkanNama() {
+  const depan = document.getElementById("namaDepan").value;
+  const belakang = document.getElementById("namaBelakang").value;
+  const teks = `Nama Lengkap : ${depan} ${belakang}`;
+
+  console.log(teks);
+  alert(teks);
+}
+</script>
